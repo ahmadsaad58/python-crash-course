@@ -4,15 +4,14 @@ Quickly Relearning Python and Data Structures
 
 Study Plan:
 0. Relearn Python
-	Intro
-	Factorial 
-	Fibonnaci
-	Strings 
+	a. Intro
+	b. Factorial 
+	c. Fibonnaci
 1. Learn Data Structures 
-	Arrays and Strings
-	LinkedList 
-	Stacks and Queues
-	Trees and Graphs 
+	a. Arrays and Strings
+	b. LinkedList 
+	c. Stacks and Queues
+	d. Trees and Graphs 
 2. Architecture 
 3. OS 
 4. Algorithms + Leetcode 
