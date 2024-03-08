@@ -1,5 +1,5 @@
 394, Decode String, 03-08-2024, Medium, String and Stack (expand a string using stacks)
-853, Car Fleet, 03-08-2024, Medium, Stack and some physics
+853, Car Fleet, 03-08-2024, Medium, Stack and some physics -- go backwards and match cars based on time (time = dist/speed). Slow cars slow down other cars making fleets
 217, Contains Duplicate, 03-08-2024, Easy, Use a set to find if there are duplicate numbers
 242, Valid Anagram, 03-08-2024, Easy, Use bucket sort to see if 2 strings are anagrams
 1, Two Sum, 03-08-2024, Easy, Use dict to keep track of number we have seen already
