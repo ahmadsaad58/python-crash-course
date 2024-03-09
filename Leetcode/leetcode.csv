@@ -7,3 +7,5 @@
 347, Top K Frequent Elements, 03-08-2024, Medium, Use heapq to keep track of the largest count for nums
 238, Product of Array Except Self, 03-08-2024, Medium, loop thru forward and back to get the product array
 128, Longest Consecutive Sequence, 03-08-2024, Medium, use a set for unique values and then loop thru a given value and see if there are numbers next to the number in the set
+271, Encode and Decode Strings, 03-08-2024, Medium, Really straight forward string question
+36, Valid Sudoku, 03-08-2024, Medium, divide the board into 9 sections and then keep track of things using a set and tuples with row and col data
