@@ -19,8 +19,18 @@ class Leetcode():
 class LeetcodeCounter():
 	def __init__(self) -> None:
 		self.questions = []
+		self.easy = 0
+		self.medium = 0
+		self.hard = 0
 
 	def append(self, question: Leetcode) -> None:
+		match question.level.lower():
+			case 'easy':
+				self.easy += 1
+			case 'medium':
+				self.medium += 1
+			case 'hard':
+				self.hard += 1
 		self.questions.append(question)
 
 	def pop(self) -> Leetcode:
@@ -49,18 +59,19 @@ def main():
 			counter.append(Leetcode(*[item.strip() for item in line]))
 
 	print(f'Total Completed: {len(counter)}')
+	print(f'Total hard: {counter.hard} \nTotal Medium: {counter.medium}')
 	
-	print('\nQuestions from Today:')
-	questions_from_today = counter.get_questions_by_date(datetime.strptime('03-08-24', '%m-%d-%y'))
-	print('\n'.join([f'{question.name}: {question.level}' for question in questions_from_today]))
+	# print('\nQuestions from Today:')
+	# questions_from_today = counter.get_questions_by_date(datetime.strptime('03-08-24', '%m-%d-%y'))
+	# print('\n'.join([f'{question.name}: {question.level}' for question in questions_from_today]))
 	
-	print('\nMedium Questions:')
-	medium_questions = counter.get_questions_by_level('Medium')
-	print('\n'.join([f'{question.name}' for question in medium_questions]))
+	# print('\nMedium Questions:')
+	# medium_questions = counter.get_questions_by_level('Medium')
+	# print('\n'.join([f'{question.name}' for question in medium_questions]))
 
-	print('\nHard Questions:')
-	hard_questions = counter.get_questions_by_level('Hard')
-	print('\n'.join([f'{question.name}' for question in hard_questions]))
+	# print('\nHard Questions:')
+	# hard_questions = counter.get_questions_by_level('Hard')
+	# print('\n'.join([f'{question.name}' for question in hard_questions]))
 
 
 if __name__ == '__main__': 
