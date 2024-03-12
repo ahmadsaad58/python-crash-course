@@ -34,3 +34,6 @@
 23, Merge k Sorted Lists, 03-12-2024, Hard, use a heapq to store all nodes and then pop them out to and recreate a list
 25, Reverse Nodes in k-Group, 03-12-2024, Hard, recursive - divide the into sections and then reverse that section and recursive call for the next section
 3, Longest Substring Without Repeating Characters, 03-12-2024, Medium, sliding window -- slide the window by adding/removing letter to a set to find a substring with no repeats. Find the max length for the substrings
+424, Longest Repeating Character Replacement, 03-12-2024, Medium, sliding window -- slide the window like earlier but this time see if there difference between most common letter and other letters is <= K. this will determine the length for a longest substring for repeating character
+121, Best Time to Buy and Sell Stock, 03-12-2024, Easy, find the min price and find the max price and substract the 2. It needs to be in order so traverse thru the array -- find max profit by max(curr max and price - min price) and find min price by min of the curr min price and price
+1465, Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts, 03-12-2024, Medium, find the max gaps and multiply them together to find max area
