@@ -9,3 +9,28 @@
 128, Longest Consecutive Sequence, 03-08-2024, Medium, use a set for unique values and then loop thru a given value and see if there are numbers next to the number in the set
 271, Encode and Decode Strings, 03-08-2024, Medium, Really straight forward string question
 36, Valid Sudoku, 03-08-2024, Medium, divide the board into 9 sections and then keep track of things using a set and tuples with row and col data
+125, Valid Palindrome, 03-08-2024, Easy, remove non alphas and check if i == -i - 1. Can use 2 pointers as well and move them based on whether there is an alpha or not
+167, Two Sum II - Input Array Is Sorted, 03-08-2024, Medium, the array is sorted so if the nums added together are greater than target -- move the larger pointer down 1 and if less then move smaller pointer up 1. Return + 1 of the index bc its not 0 based index
+15, ThreeSum, 03-08-2024, Medium, treat it like a + two sum II (so sort the array and do the 2 sum II that we did earlier but with a third value)
+666, Path Sum IV, 03-11-2024, Medium, make a dict with [depth (comma) pos] = value and then dfs thru it adding the values starting with left side and going to thru right side
+11, Container With Most Water, 03-11-2024, Medium, 2 pointer approach where we use the min height to determine the overall curr area and we move the min height pointer onwards. 
+42, Trapping Rain Water, 03-11-2024, Hard, 2 pointer approach - use left and right. Find the local max for left and right values of the array and minus that from curr. If left is bigger than right then move right and vice versa adding all the max - curr to a total
+20, Valid Parentheses, 03-11-2024, Easy, use a stack. if there is a valid start then add it to the stack. when a valid end comes check if there is anything in the stack and if that stack top is the end that matches the beginning
+115, Min Stack, 03-11-2024, Medium, use 2 stacks. when adding check if the number is less than the top of min stack and when removing be sure to remove both from min stack and regular stack if values match
+150, Evaluate Reverse Polish Notation, 03-11-2024, Medium, add nums to stack. when a operator is found then pop off 2 nums and do the operation and push the result back on stack
+22, Generate Parentheses, 03-11-2024, Medium, dfs recursively to get all the different options for the parenthesis. use a string to keep track and add to an external array
+739, Daily Temperatures, 03-11-2024, Medium, using a stack - check if curr temp is greater than top of stack - if so then find the difference between i and the temp in stack's index and that will be how many days it took for the temp to be greater than before
+853, Car Fleet, 03-11-2024, Medium, using a stack - put all the cars together based on which is the slowest car in front and how many bottleneck behind it. Sort the cars by position in descending order. Find the time it takes each car to get to the end and if the time is greater than the car at the top of the stack then add to the stack. returning the len of the stack will get you the number of car fleets
+84, Largest Rectangle in Histogram, 03-11-2024, Medium, using a stack -- go thru the heights and push each height and index. if the new height is less than the top of stack then pop and calculate area. if area is bigger than max area then set this area to new max area and finally return the max area 
+206, Reverse Linked List, 03-11-2024, Easy, curr.next = prev; prev = curr; curr = curr.next in that order
+21, Merge Two Sorted Lists, 03-11-2024, Easy, LinkedList; create a curr and dummy head. loop thru the list1 and list2. whichever val is greater add that to curr and move the corresponding list forward. tie up lose ends at the end of the loop by adding the remaining list values if any
+143, Reorder List, 03-11-2024, Medium, 1. Find middle point with fast and slow pointers; 2. reverse second half of list using reverse (curr.next = prev prev = curr curr = curr.next); 3. merge the lists 
+19, Remove Nth Node From End of List, 03-11-2024, Medium, use 2 pointer in linked list; fast pointer and slow pointer. move faster pointer n ahead of slow and then move slow and fast to end of the list and skip over fast pointer 
+2, Add Two Numbers, 03-11-2024, Medium, Traverse thru the linkedlists adding their values together and having a carry node in case there is more needed
+141, LinkedList cycle, 03-11-2024, Easy, Fast and regular pointer -- go thru them and see if fast == regular else false
+138, Copy List with Random Pointer, 03-11-2024, Medium, use a dict + traverse twice to make a deep copy
+287, Find the duplicate Number, 03-11-2024, Medium, find the cycle and that will be the double number. You can use the nums as indexes
+146, LRU Cache, 03-11-2024, Medium, use a dict and capacity int to do this. removing the most recent when reaching capacity
+23, Merge k Sorted Lists, 03-12-2024, Hard, use a heapq to store all nodes and then pop them out to and recreate a list
+25, Reverse Nodes in k-Group, 03-12-2024, Hard, recursive - divide the into sections and then reverse that section and recursive call for the next section
+3, Longest Substring Without Repeating Characters, 03-12-2024, Medium, sliding window -- slide the window by adding/removing letter to a set to find a substring with no repeats. Find the max length for the substrings
