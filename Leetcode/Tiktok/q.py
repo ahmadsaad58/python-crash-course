@@ -198,7 +198,7 @@ def kthSmallest(root: Optional[TreeNode], k: int) -> int:
 
 # Optimal Account Balancing
 
-def minTransfers(self, transactions: List[List[int]]) -> int:
+def minTransfers(transactions: List[List[int]]) -> int:
     # make a map for vals to calculate nodes +/-
     score = defaultdict(int)
     for f, t, a in transactions:
