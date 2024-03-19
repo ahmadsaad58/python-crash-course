@@ -54,3 +54,4 @@
 230, Kth Smallest Element in a BST, 03-13-2024, Medium, inorder traversal with early stopping if ret == k
 208, Implement Trie (Prefix Tree), 03-13-2024, Medium, trie which is a hashmap of a hashmap of so on of letters 
 465, Optimal Account Balancing, 03-13-2024, Hard, used permutations and recursion to solve this
+221, Maximal Square, 03-13-2024, Medium, dp problem to get the max side lengths and multiply together to get max square area

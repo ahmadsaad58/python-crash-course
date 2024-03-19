@@ -8,7 +8,7 @@ Study Plan:
 	Intro
 	Factorial 
 	Fibonnaci
-1. Learn Data Structures 
+1. Learn Data Structures + Cracking the Coding Interview
 	Arrays and Strings
 	LinkedList 
 	Stacks and Queues
