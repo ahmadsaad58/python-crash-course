@@ -1,0 +1,3 @@
+1235, Maximum Profit in Job Scheduling, 03-25-2024, Hard, DP problem with overlapping jobs - need to get the most profit. So sort the jobs by start time. Make a min heap ordered by end time. We need to check if job x is worth more job y so we compare profits and loop thru the array. Keep track of max profit for an iteration (ie between different jobs) and overall max profit. 
+286, Walls and Gates, 03-25-2024, Medium, BFS. Go thru and add all the gates to a queue. While queue: pop off the first in queue and then go in all directions with new row and col. If new row and col == empty spot then add 1 + old row and col to new row and col (effectively saying this is 1 + previous spot from the gate). Add the new row and col to queue. Return nothing
+  

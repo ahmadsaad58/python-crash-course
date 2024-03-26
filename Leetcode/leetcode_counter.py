@@ -53,7 +53,7 @@ class LeetcodeCounter():
 def main():
 	counter = LeetcodeCounter()
 	
-	with open("leetcode.csv", 'r', newline='\n') as my_file: 
+	with open("doordash_leetcode.csv", 'r', newline='\n') as my_file: 
 		questions_reader = csv.reader(my_file, delimiter=',')
 		for line in questions_reader:
 			counter.append(Leetcode(*[item.strip() for item in line]))
