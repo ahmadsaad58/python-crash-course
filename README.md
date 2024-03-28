@@ -14,7 +14,7 @@ Study Plan:
 	Stacks and Queues
 	Trees and Graphs 
 2. Architecture (done)
-3. OS (wip)
+3. OS (done but could watch videos)
 4. Algorithms + Leetcode (wip)
 5. Networks 
 6. SWE 

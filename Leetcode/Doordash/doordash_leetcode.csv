@@ -1,3 +1,11 @@
+1526, Minimum Number of Increments on Subarrays to Form a Target Array, 03-27-2024, Hard, Given an array A and an array B; how many steps does it take to convert B to A if you can only modify subarrays. So only modify contiguous portions of the array. We check if the curr val is greater than prev val and add the difference between them to steps. Return steps 
+297, Serialize and Deserialize Binary Tree, 03-27-2024, Hard, Using BFS we store the tree into a string. Be sure to add extra space after leaves to denote leaves. To deserialize: split the string into a list - traverse the list with another queue adding left then right 
+124, Binary Tree Maximum Path Sum, 03-27-2024, Hard, Using DFS
+
+
+
+
+
+
 1235, Maximum Profit in Job Scheduling, 03-25-2024, Hard, DP problem with overlapping jobs - need to get the most profit. So sort the jobs by start time. Make a min heap ordered by end time. We need to check if job x is worth more job y so we compare profits and loop thru the array. Keep track of max profit for an iteration (ie between different jobs) and overall max profit. 
 286, Walls and Gates, 03-25-2024, Medium, BFS. Go thru and add all the gates to a queue. While queue: pop off the first in queue and then go in all directions with new row and col. If new row and col == empty spot then add 1 + old row and col to new row and col (effectively saying this is 1 + previous spot from the gate). Add the new row and col to queue. Return nothing
-  
